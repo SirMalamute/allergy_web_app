@@ -1,0 +1,23 @@
+{
+    "name": "Agricola",
+    "location": "11 Witherspoon St, Princeton, NJ 08542",
+    "items": [
+      {
+        "name": "Appetizer Rec: Wild Mushroom Pate (VGN)",
+        "description": "sherry gelée, pickled onions, cornichons, prune jam, toast"
+      },
+      {
+        "name": "Appetizer Rec: Hummus Board (V)",
+        "description": "warm pita pillow, feta cheese, garden vegetables, roasted tomatoes"
+      },
+      {
+        "name": "Entree Rec: Pomegranate Glazed Prime Short Rib",
+        "description": "sweet potato purée, roasted carrots, frizzled onions, salsa verde"
+      },
+      {
+        "name":"Entree Rec: Seared Barnegat Bay Scallops (GF)",
+        "description":"celery root puree, Brussels sprouts, apples, fennel, fried capers, apple cider reduction"
+      }
+    ]
+}
+  

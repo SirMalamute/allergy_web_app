@@ -1,0 +1,27 @@
+{
+    "name": "Alchemist & Barrister",
+    "location": "28 Witherspoon St, Princeton, NJ 08542",
+    "items": [
+      {
+        "name": "Chicken Pot Pie",
+        "description": "carrots, celery, onions, potatoes & flaky crush."
+      },
+      {
+        "name": "Short Rib Birria Tacos",
+        "description": "shredded beef, corn tortillas, onion, cilantro, radish, jalapeño slaw, melted cheese, birria sauce & lime crema."
+      },
+      {
+        "name": "Fish and Chips",
+        "description": "tempura battered cod. served with french fries, tartar sauce & lemon wedge."
+      },
+      {
+        "name": "Free Range Chicken Breast",
+        "description": "pan seared chicken with roasted herb red potatoes, grilled asparagus & chicken broth."
+      },
+      {
+        "name":"NY Strip Steak (8oz.)",
+        "description":"garlic mashed potatoes or roasted herb red potatoes & grilled asparagus. served with madeira gravy."
+      }
+    ]
+}
+  

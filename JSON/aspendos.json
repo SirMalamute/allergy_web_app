@@ -1,0 +1,35 @@
+{
+    "name": "Aspendos Mediterranean Cuisine",
+    "location": "182 Nassau St, Princeton, NJ 08542",
+    "items": [
+      {
+        "name": "Sakshouka",
+        "description": "With fried vegetables, tomato sauce, parsley and garlic yogurt."
+      },
+      {
+        "name": "Pan Fried Potatoes",
+        "description": "Pan fried potatoes with caramelized onions, thyme, chili pepper, yogurt, and chili oil."
+      },
+      {
+        "name": "Mucver",
+        "description": "Zucchini pancake with smoked yogurt and molasses sauce."
+      },
+      {
+        "name": "Crispy Octopus",
+        "description": "Roasted eggplant spread, marinated tomatoes with garlic & fresh basil."
+      },
+      {
+        "name":"Lamb Shank",
+        "description":"With barley vermicelli, cream, thyme, and jus sauce."
+      },
+      {
+        "name":"Mushroom Grilled with Potato Puree",
+        "description":"Baked mushrooms, mashed potato and crunchy leek on top with Glazed truffle dressing."
+      },
+      {
+        "name":"Lamb Casserole",
+        "description":"Chopped lamb pieces cooked in oven with brown butter sauce, covered with flat bread."
+      }
+    ]
+}
+  

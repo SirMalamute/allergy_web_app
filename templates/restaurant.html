@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blaze-ui@3.11.0/dist/blaze.min.css">
+    <style>
+        html, body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            height: 100%;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .see-more {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #2575fc;
+            background: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .see-more:hover {
+            background: #2575fc;
+            color: white;
+        }
+
+        .menu-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            display: none; /* Initially hidden */
+        }
+
+        .menu-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-item-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .menu-item-description {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .disclaimer {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function showMenu() {
+            const menuSection = document.getElementById('menu-section');
+            menuSection.style.display = 'block';
+            menuSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <title>AllergenAware - {{ data.name }}</title>
+</head>
+<body>
+
+    <section class="hero">
+        <h1 class="hero-title">{{ data.name }}</h1>
+        <p class="hero-subtitle">{{ data.location }}</p>
+        <button class="see-more" onclick="showMenu()">See Menu</button>
+        <p>The menu intends to provide dish recommendations for individuals suffering from peanut and treenut allergies.</p>
+    </section>
+
+    <section id="menu-section" class="menu-section">
+        <div class="disclaimer">
+            <p>Please note: This menu was made in collaboration with {{data.name}} to provide safe options for individuals with peanut and treenut allergies, and simply serves as a reference point which may not be perfect. As always, take caution and ensure to consult with the staff for any dietary restrictions or allergen concerns.</p>
+        </div>
+        <div class="menu-grid">
+            {% for item in data['items'] %}
+            <div class="menu-card">
+                <h2 class="menu-item-title">{{ item['name'] }}</h2>
+                <p class="menu-item-description">{{ item['description'] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>

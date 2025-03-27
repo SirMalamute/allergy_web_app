@@ -1,0 +1,19 @@
+{
+    "name": "Gourmet Bistro",
+    "location": "123 Flavor Street, Culinary City",
+    "items": [
+      {
+        "name": "Truffle Pasta",
+        "description": "A rich and creamy pasta infused with black truffle essence."
+      },
+      {
+        "name": "Herb-Crusted Salmon",
+        "description": "Salmon fillet baked with a crispy herb crust and served with lemon butter sauce."
+      },
+      {
+        "name": "Vegan Chocolate Cake",
+        "description": "A decadent chocolate cake made with 100% vegan ingredients."
+      }
+    ]
+}
+  
